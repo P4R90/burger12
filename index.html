@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/home_style.css">
+    <link rel="icon" href="./img/burger_icon.png">
+    <title>Bitchen Burger - Home</title>
+</head>
+<body>
+
+    <section class="header">
+        <div class="logo"></div>
+        <ul class="nav">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="menu.html">Menu</a>
+            </li>
+            <li>
+                <a href="recipe.html">Recipes</a>
+            </li>
+            <li>
+                <a href="merch.html">Merch</a>
+            </li>
+            <li>
+              <a href="roulette.html">Roulette</a>
+           </li>
+            
+          </ul>
+      </section>
+
+
+    
+    <div id="content">
+        <div class="welcome_banner">
+            <img src="./img/burger_promo-01.png" class="slides" alt="Americana">
+            <img src="./img/burger_promo-02.png" class="slides" alt="Free Fries Fridays">
+            <img src="./img/burger_promo-03.png" class="slides" alt="Free Fries Fridays">
+        </div>
+
+        <div class="title">
+            <h1>BURGER ME SIDEWAYS</h1> 
+            <h2>Way back in 2023, one ambitious and proud englishman, who had watched too many episodes of Gordan Ramsay Kitchen Nightmares, changed the UK Burger scene forever. Now with very little experience and 1 store location, we pride ourselves on serving up a variety of handcrafted burgers, combining 100% prime beef with the freshest ingredients and burger sauces made from scratch, every day, in our Bitchen Burger kitchen.</h2>
+
+            <button class="find_out_more" onclick="popup()">Where are we?</button>
+
+            <div id="popup-box">
+                <div class="pop_up_content">
+                    <p class="pop_up_welcome">Which way to the beach?</p>
+                    <div class="pop_up_text">You can find us right on the coast in Portobello, Edinburgh.</div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2233.762620304894!2d-3.1157993840384806!3d55.95348613396349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887b9b214979223%3A0x3b99e23c8075906b!2sBath%20St%2C%20Portobello%2C%20Edinburgh%20EH15%201EY!5e0!3m2!1sen!2suk!4v1678844012900!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <button class="close_button" onclick="closePopup()">Close</button>
+                </div>
+            </div>
+
+
+            
+        </div>
+
+                <!--Music Player -->
+        <div class="music_section">
+            <h1 class="music_title">MUSIC SECTION</h1>
+            <h2>Here at Bitchen Burger we take things seriously. Not only do we <br>
+                intend on tantalising your tastbuds, we also want to feed your ears.<br>
+                Check out our Bitchen Playlist, check back regularly for updates.</h2>
+            <div class="tv_animation"></div>
+            <div id="audio-player">
+                <div class="control">
+                    <div class="album_art"></div>
+                    <audio class="player" id="player" src="./audio/Suede - Animal Nitrate.mp3" controls></audio>
+                </div>
+                <div class="song_buttons">
+                    <button class="music_button" onclick="changeSong('./audio/Suede - Animal Nitrate.mp3')">Suede - Animal Nitrate</button>
+                    <button class="music_button" onclick="changeSong('./audio/Dario G - Sunchyme.mp3')">Dario G - Sunchyme</button>
+                    <button class="music_button" onclick="changeSong('./audio/Stone Roses - Sally Cinnamon.mp3')">Stone Roses - Sally Cinnamon</button>
+                    <button class="music_button" onclick="changeSong('./audio/Daft Punk - Something About Us.mp3')">Daft Punk - Something About Us</button>
+                    <button class="music_button" onclick="changeSong('./audio/Sonic Youth - Dirty Boots.mp3')">Sonic Youth - Dirty Boots</button>
+                    <button class="music_button" onclick="changeSong('./audio/New Order - Age of Consent.mp3')">New Order - Age of Consent</button>
+                    <button class="music_button" onclick="changeSong('./audio/Faithless - Tarantula.mp3')">Faithless - Tarantula</button>
+                    <button class="music_button" onclick="changeSong('./audio/The Cranberries - Dreams.mp3')">The Cranberries - Dreams</button>
+                </div>
+            </div>
+        </div>
+
+        <!--Last Section-->
+        <div class="last_section">
+            <h1 class="gallery_title">WALL OF FAME</h1>
+            <h2 class="gallery_info">Would you like to be shown on our AWESOME Wall of Fame?<br>Send your photos to bitchen@bitchenburger.com</h2>
+            <div class="gallery-container">
+                <img src="./img/Resize/gallery_image-01.png" alt="Image 1" class="gallery-image" onclick="openModal(this);">
+                <img src="./img/Resize/gallery_image-02.png" alt="Image 1" class="gallery-image" onclick="openModal(this);">
+                <img src="./img/Resize/gallery_image-03.png" alt="Image 1" class="gallery-image" onclick="openModal(this);">
+                <img src="./img/Resize/gallery_image-04.png" alt="Image 1" class="gallery-image" onclick="openModal(this);">
+                <img src="./img/Resize/gallery_image-05.png" alt="Image 1" class="gallery-image" onclick="openModal(this);">
+                <img src="./img/Resize/gallery_image-06.png" alt="Image 1" class="gallery-image" onclick="openModal(this);">
+                <img src="./img/Resize/gallery_image-07.png" alt="Image 1" class="gallery-image" onclick="openModal(this);">
+                <img src="./img/Resize/gallery_image-08.png" alt="Image 1" class="gallery-image" onclick="openModal(this);">
+                <img src="./img/Resize/gallery_image-09.png" alt="Image 1" class="gallery-image" onclick="openModal(this);">
+                <img src="./img/Resize/gallery_image-10.png" alt="Image 1" class="gallery-image" onclick="openModal(this);">
+                <img src="./img/Resize/gallery_image-11.png" alt="Image 1" class="gallery-image" onclick="openModal(this);">
+                <img src="./img/Resize/gallery_image-12.png" alt="Image 1" class="gallery-image" onclick="openModal(this);">
+            </div>
+
+            <h2 class="quote">"If you don't even know what to say, just be like 'That's Hot'" - Paris Hilton</h2>
+        
+            <div id="modal" class="modal">
+                <span class="close" onclick="closeModal();">&times;</span>
+                <img class="modal-content" id="modalImage">
+            </div>
+
+        </div>
+
+    </div>
+    
+    <!--Footer Content-->
+    <footer>
+        <p class="copyright">bitchenburger.co.uk © 2023</p>       
+    </footer>
+     
+
+    <div class="contact">
+        <h1>Contact Us</h1>
+        <form action="process-form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+          
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+          
+            <button type="submit">Send</button>
+          </form>
+    </div>
+
+    <script src="./scripts/home_script.js"></script>
+</body>
+
+</html>

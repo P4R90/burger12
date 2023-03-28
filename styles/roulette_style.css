@@ -1,0 +1,235 @@
+/* CSS Reset */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+
+.header {
+  position: fixed;
+    display: flex;
+    height: 100px;
+    width: 100vw;
+    align-items: center;
+    background-color: #FFB7B7;
+    z-index: 99;
+}
+
+.logo {
+    margin-left: 200px;
+    background-image: url("../img/Logo.png");
+    flex-grow: 2;
+    background-repeat: no-repeat;
+    height: 70px;
+    
+}
+
+.nav {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    padding: 100px;
+    list-style-type: none;
+}
+
+.nav a {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.nav a:hover {
+    color: #EFA7A7;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .page_title {
+    margin-top: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+  }
+
+
+/* Spinner */
+
+
+.roulette-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  margin-top: 50px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 900px;
+}
+
+#roulette-image {
+  max-width: 50%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+button { 
+  border-radius: 50%; 
+  width: 100px;
+  height: 100px;
+  border: none;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+  background: #FFB7B7;
+  text-shadow: 0 3px 1px #EFA7A7 ;
+  box-shadow: 0 8px 0 #EFA7A7, 
+    0 15px 20px rgba(0,0,0,.35);
+  text-transform: uppercase;
+  transition: .4s all ease-in;
+  outline: none; 
+  cursor: pointer;
+  text-align: center;
+}
+
+button span { 
+  position: relative; 
+}
+
+button:hover { 
+  padding-top: 3px;
+  transform: translateY(4px);
+  box-shadow: 0 4px 0 #EFA7A7,
+    0 8px 6px rgba(0,0,0,.45);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading {
+  animation: spin 1s linear infinite;
+}
+  
+.quote {
+    margin-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 24px;
+    font-style: italic;
+  }
+
+
+  /* Footer */
+
+footer {
+  display: flex;
+  background-color: rgb(255, 183, 183);
+  color: white;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  
+}
+.copyright {
+  font-size: x-large;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Contact Form */
+.contact  {
+background: rgb(255, 183, 183);
+padding: 30px 0 50px 0;
+text-align: center;
+}
+
+.contact h1 {
+color: white;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact form {
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+margin: 0 auto;
+max-width: 400px;
+height: 450px;
+text-align: left;
+padding: 10px 0;
+}
+
+.contact form label {
+color: white;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+}
+
+html body div.contact form input#name {
+height: 35px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 20px;
+background-color: #ffdcdc;
+border: none;
+padding-left: 15px;
+color: grey;
+}
+
+html body div.contact form input#email {
+height: 35px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 20px;
+background-color: #ffdcdc;
+border: none;
+padding-left: 15px;
+color: grey;
+}
+
+html body div.contact form input#subject {
+height: 35px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 20px;
+background-color: #ffdcdc;
+border: none;
+padding-left: 15px;
+color: grey;
+}
+
+#message {
+height: 150px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 20px;
+background-color: #ffdcdc;
+border: none;
+padding-top: 15px;
+padding-left: 15px;
+color: grey;
+}
+
+html body div.contact form button {
+
+background-color: #ffdcdc;
+height: 40px;
+border: none;
+border-color: white;
+}

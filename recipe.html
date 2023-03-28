@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/recipe_style.css">
+    <link rel="icon" href="./img/burger_icon.png">
+    <title>Bitchen Burger - Recipe</title>
+</head>
+<body>
+
+    <section class="header">
+        <div class="logo"></div>
+        <ul class="nav">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="menu.html">Menu</a>
+            </li>
+            <li>
+                <a href="recipe.html">Recipes</a>
+            </li>
+            <li>
+                <a href="merch.html">Merch</a>
+            </li>
+            <li>
+              <a href="roulette.html">Roulette</a>
+           </li>
+            
+          </ul>
+      </section>
+
+    <div class="content">
+        <h1 class="page_title">Recipes</h1>
+        
+
+        <div class="recipe_section">
+
+            <!--Burger 1-->
+            <button class="recipe-card" onclick="popup()">
+                <div class="recipe-card-image1"></div>
+                <div class="recipe-card-content">
+                    <h2 class="recipe-card-title">Mexicana</h2>
+                    <p class="recipe-card-description">Juicy beef Mexican burgers served with homemade, creamy guacamole and fresh pico de gallo is the ultimate weekend treat.</p>
+                </div>        
+            </button>
+
+            <!--Burger 2-->
+
+             <button class="recipe-card" onclick="popup()">
+                <div class="recipe-card-image2"></div>
+                <div class="recipe-card-content">
+                    <h2 class="recipe-card-title">Americana</h2>
+                    <p class="recipe-card-description">American sandwich consisting of a beef patty, grilled and served on a bun with various toppings, and a helping of American cheese.</p>
+                </div>        
+            </button>
+
+             <!--Burger 3-->
+             <div class="recipe-card">
+                <div class="recipe-card-image3"></div>
+                <div class="recipe-card-content">
+                    <h2 class="recipe-card-title">Hawaiian</h2>
+                    <p class="recipe-card-description">Fans of Hawaiian pizza will love this burger. Sweet pineapple and peppers complement tangy BBQ sauce and juicy beef burgers.</p>
+                </div>        
+            </div>
+
+             <!--Burger 4-->
+             <div class="recipe-card">
+                <div class="recipe-card-image4"></div>
+                <div class="recipe-card-content">
+                    <h2 class="recipe-card-title">Some Like it Hot</h2>
+                    <p class="recipe-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce feugiat nulla nec tellus interdum, quis blandit massa elementum.</p>
+                </div>        
+            </div>
+            
+        
+        </div>
+
+        <h2 class="quote">"Let's be havin' you!" - Delia Smith</h2>
+
+    </div>
+
+    <!--Footer Content-->
+    <footer>
+        <p class="copyright">bitchenburger.co.uk © 2023</p>       
+    </footer>
+     
+
+    <div class="contact">
+        <h1>Contact Us</h1>
+        <form action="process-form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+          
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+          
+            <button type="submit">Send</button>
+          </form>
+    </div>
+    <script src="./scripts/recipe_script.js"></script>
+</body>
+</html>
