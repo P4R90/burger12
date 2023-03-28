@@ -2,7 +2,6 @@ const images = [
     "./img/spin/spin-02.png",
     "./img/spin/spin-03.png",
     "./img/spin/spin-04.png"
-    // Add more image URLs here
   ];
   
   const spinButton = document.getElementById("spin-button");

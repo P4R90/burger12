@@ -1,0 +1,131 @@
+/* CSS Reset */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+.header {
+    display: flex;
+    height: 100px;
+    width: 100%;
+    background-color: pink
+}
+
+.logo{
+    margin-top: 10px;
+    width: 400px;
+    height: 100px;
+    background-image: url(/img/Logo_mexicana.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.logo_americana{
+    margin-top: 10px;
+    width: 400px;
+    height: 100px;
+    background-image: url(/img/Logo_americana.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.logo_hawaiian{
+    margin-top: 10px;
+    width: 400px;
+    height: 100px;
+    background-image: url(/img/Logo_hawaiian.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.logo_slih{
+    margin-top: 22px;
+    width: 400px;
+    height: 100px;
+    background-image: url(/img/Logo_slih.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 400px;
+}
+
+.recipe {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+
+.recipe_title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.recipe_content{
+    display: flex;
+}
+
+.recipe_list {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 150px;
+}
+
+
+
+.instructions {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+}
+
+.instruction_title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+
+video {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.recipe_download {
+    margin-left: 20px;
+    margin-top: 30px;
+    width: 200px;
+    background-color: white;
+    height: 50px;
+    border: solid;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+  }
+  
+  .recipe_download:hover {
+    background-color: black;
+    color: white;
+  }
